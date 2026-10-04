@@ -1,0 +1,79 @@
+/* Estilo general de la ventana */
+.root {
+    -fx-background-color: #c0c0c0;
+    -fx-font-family: "Courier New";
+}
+
+/* Texto del estado del juego */
+.estado {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+/* Botón reiniciar */
+.button {
+    -fx-background-color: #c0c0c0;
+    -fx-border-color: #ffffff #808080 #808080 #ffffff;
+    -fx-border-width: 3px;
+    -fx-font-family: "Courier New";
+    -fx-font-weight: bold;
+}
+/* Botón reiniciar al pasar el ratón por encima */
+.button:hover {
+    -fx-background-color: #d0d0d0;
+}
+
+/* Botón reiniciar al ser presionado */
+.button:pressed {
+    -fx-border-color: #808080 #ffffff #ffffff #808080;
+}
+
+/* Casillas del tablero */
+.button.casilla {
+    -fx-background-color: #c0c0c0;
+    -fx-border-color: #ffffff #808080 #808080 #ffffff;
+    -fx-border-width: 3px;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Cuando pasamos el ratón por encima */
+.button.casilla:hover {
+    -fx-background-color: #d0d0d0;
+}
+
+/* Cuando la casilla ya está abierta */
+.button.casilla.abierta {
+    -fx-background-color: #c0c0c0;
+    -fx-border-color: #808080 #ffffff #ffffff #808080;
+    -fx-border-width: 2px;
+}
+
+/* Casillas con mina */
+.button.casilla.mina {
+    -fx-background-color: #c0c0c0;
+    -fx-border-color: #808080 #ffffff #ffffff #808080;
+    -fx-border-width: 2px;
+}
+/* Colores según el número de minas adyacentes */
+.button.casilla.num1 {
+    -fx-text-fill: blue;
+}
+
+.button.casilla.num2 {
+    -fx-text-fill: green;
+}
+
+.button.casilla.num3 {
+    -fx-text-fill: red;
+}
+
+/* Evitamos que los botones deshabilitados cambien de aspecto */
+.button.casilla:disabled,
+.button.casilla.abierta:disabled,
+.button.casilla.mina:disabled {
+    -fx-opacity: 1;
+    -fx-background-color: #c0c0c0;
+}
+
